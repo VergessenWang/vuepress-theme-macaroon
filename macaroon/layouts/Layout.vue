@@ -1,14 +1,22 @@
 <template>
   <!-- 如果配置了layout，那么此组件将会代替docs中的readme作为主页 -->
-  <div>
-    <div>layout test</div>
+  <div id="app">
+    <div>layout test1111</div>
   </div>
 </template>
 <script>
 export default {
-  // name: "macaroon",
+  name: "macaroon",
   created() {
     console.log("是否创建layout");
   },
 };
 </script>
+
+<style scoped>
+#app {
+  height: 300px;
+  width: 300px;
+  border: 3px solid rebeccapurple !important;
+}
+</style>
