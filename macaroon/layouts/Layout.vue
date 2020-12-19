@@ -1,22 +1,18 @@
 <template>
   <!-- 如果配置了layout，那么此组件将会代替docs中的readme作为主页 -->
-  <div id="app">
-    <div>layout test1111</div>
-  </div>
+  <div class="site-container"></div>
 </template>
 <script>
 export default {
-  name: "macaroon",
+  name: "Layout",
   created() {
     console.log("是否创建layout");
+    window.alert("这是layout页面吗？？？");
   },
 };
 </script>
 
-<style scoped>
-#app {
-  height: 300px;
-  width: 300px;
-  border: 3px solid rebeccapurple !important;
-}
+<style lang="stylus">
+@import './../styles/global.styl';
 </style>
+

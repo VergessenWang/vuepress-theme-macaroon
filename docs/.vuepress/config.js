@@ -5,10 +5,10 @@ module.exports = {
   // 网站描述。这将在页面 HTML 中表现为一个 <meta> 标签。
   description: "I'm trying to develop my vuepress theme",
   // 被注入页面 HTML <head> 额外的标签。每个标签可以用 [tagName, { attrName: attrValue }, innerHTML?] 的形式指定
-  // ico 不生效？之后再试下别的配置
-  // head: [
-  //   ['link', { rel: 'icon', href: `../../macaroon/assets/web-title.ico` }]
-  // ]
+  // ico 不生效？好坑，这里默认引用的是同目录下的public,所以head引入资源最好统一放在该文件夹中
+  head: [
+    ['link', { rel: 'icon', type: "image/x-icon", href: '/img/web-title.ico' }]
+  ],
   // 
   // 指定此选项来使用自定义主题。使用 “macaroon” 的值，VuePress 将尝试在 node_modules/vuepress-theme-macaroon/Layout.vue 加载主题组件。
   // 如果指定路径呢？
