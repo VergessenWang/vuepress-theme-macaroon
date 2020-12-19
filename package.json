@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/VergessenWang/vuepress-theme-macaroon/issues"
   },
-  "homepage": "https://github.com/VergessenWang/vuepress-theme-macaroon#readme"
+  "homepage": "https://github.com/VergessenWang/vuepress-theme-macaroon#readme",
+  "devDependencies": {
+    "vuepress": "^1.7.1"
+  }
 }
