@@ -1,17 +1,23 @@
-$siteBackgroudColor = #fff7f3
-$siteTextColor = #052142
+@import "_varibles.styl"
 
 html, body
   box-sizing: border-box;
   padding 0
   margin 0
+  font-size 16px
   background-color $siteBackgroudColor
   // border 3px solid red
 
 body
   font-family -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
   -webkit-font-smoothing antialiased
-  -moz-osx-font-smoothing grayscal                                                                                                               e
-  font-size 16px
+  -moz-osx-font-smoothing grayscal                                                                                                               
   color $siteTextColor
   // border 3px solid yellow
+
+
+@media screen and (max-width: $MQMobile) {
+  html {
+    font-size 12px
+  }
+}
