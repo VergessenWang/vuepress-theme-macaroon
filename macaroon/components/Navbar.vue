@@ -5,13 +5,22 @@
         <img class="nav-logo" src="../assets/nav/nav-logo.svg" />
         <p class="site-name">{{ this.$site.title }}</p>
       </div>
+      <div class="pc-search-link">
+        <div>pc页面搜索框</div>
+        <nav-links></nav-links>
+      </div>
+      <div class="mo-search-link"></div>
     </nav>
   </header>
 </template>
 
 <script>
+import NavLinks from "./NavLinks.vue";
 export default {
   name: "NavBar",
+  components: {
+    NavLinks,
+  },
 };
 </script>
 
