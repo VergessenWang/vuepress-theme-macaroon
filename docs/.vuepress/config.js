@@ -18,19 +18,17 @@ module.exports = {
   theme: path.resolve(__dirname, "../../macaroon/"),
   // 为使用的主题提供配置选项。这些选项将根据你使用的主题而有所不同。这也是主题个性化的最重要配置
   themeConfig: {
-    // 如下为一些数据结构示例
-    // nav: [
-    //   {
-    //     text: 'Home',
-    //     link: '/',
-    //     icon: 'el-icon-house',
-    //   },
-    //   {
-    //     text: 'Projects',
-    //     link: '/projects/',
-    //     icon: 'el-icon-folder',
-    //   },
-    // ],
+    // 导航路由配置
+    nav: [
+      {
+        text: '主页',
+        link: '/',
+      },
+      {
+        text: '所有博文',
+        link: '/_posts/',
+      },
+    ],
     // about: {
     //   fullName: 'Ahmad Mostafa',
     //   bio: 'I am a passionate Software Engineer, I love Vue.js ♥ ...',
